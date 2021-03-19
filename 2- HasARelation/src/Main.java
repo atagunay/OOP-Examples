@@ -19,7 +19,9 @@ public class Main {
 
         Ram ram = new Ram(3200,64);
         Cpu cpu = new Cpu(4000,70,"AMD");
-        Computer myComputer2 = new Computer(ram,cpu);
+        Disc disc = new Disc(250,1);
+        Computer myComputer2 = new Computer(ram,cpu,disc);
+
 
         System.out.println("*********************** @ myComputer2 @ ***********************");
         System.out.println("Ram speed: " + myComputer2.getRam().getSpeed());
@@ -27,6 +29,8 @@ public class Main {
         System.out.println("Cpu speed: " + myComputer2.getCpu().getMhz());
         System.out.println("Cpu cache size: " + myComputer2.getCpu().getCacheSize());
         System.out.println("Cpu cache size: " + myComputer2.getCpu().getManufacturer());
+        System.out.println("Disc type: " + myComputer2.getDisc().getTypeString());
+
 
 
 

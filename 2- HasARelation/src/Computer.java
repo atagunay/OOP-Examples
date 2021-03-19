@@ -2,15 +2,19 @@ public class Computer {
 
     Ram ram;
     Cpu cpu;
+    Disc disc;
 
     public Computer() {
         cpu = new Cpu();
         ram = new Ram();
+        disc = new Disc();
+
     }
 
-    public Computer(Ram ram, Cpu cpu) {
+    public Computer(Ram ram, Cpu cpu, Disc disc) {
         this.ram = ram;
         this.cpu = cpu;
+        this.disc = disc;
     }
 
     public Ram getRam() {
@@ -27,5 +31,13 @@ public class Computer {
 
     public void setCpu(Cpu cpu) {
         this.cpu = cpu;
+    }
+
+    public Disc getDisc() {
+        return disc;
+    }
+
+    public void setDisc(Disc disc) {
+        this.disc = disc;
     }
 }
